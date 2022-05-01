@@ -41,6 +41,9 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+# 提前注册
+$app->register(\App\Providers\MultiEntryRouteServiceProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

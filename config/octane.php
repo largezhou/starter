@@ -218,4 +218,6 @@ return [
 
     'max_execution_time' => 30,
 
+    'state_file' => storage_path('tmp/octane-server-state-' . env('ROUTE_TYPE') . '.json'),
+
 ];
